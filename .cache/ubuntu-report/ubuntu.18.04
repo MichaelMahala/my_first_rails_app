@@ -1,0 +1,93 @@
+{
+  "Version": "18.04",
+  "OEM": {
+    "Vendor": "Hewlett-Packard",
+    "Product": "HP EliteBook 8460p"
+  },
+  "BIOS": {
+    "Vendor": "Hewlett-Packard",
+    "Version": "68SCF Ver. F.42"
+  },
+  "CPU": {
+    "OpMode": "32-bit, 64-bit",
+    "CPUs": "4",
+    "Threads": "2",
+    "Cores": "2",
+    "Sockets": "1",
+    "Vendor": "GenuineIntel",
+    "Family": "6",
+    "Model": "42",
+    "Stepping": "7",
+    "Name": "Intel(R) Core(TM) i5-2540M CPU @ 2.60GHz",
+    "Virtualization": "VT-x"
+  },
+  "Arch": "amd64",
+  "GPU": [
+    {
+      "Vendor": "8086",
+      "Model": "0126"
+    }
+  ],
+  "RAM": 3.9,
+  "Partitions": [
+    58.1
+  ],
+  "Screens": [
+    {
+      "Size": "309mmx174mm",
+      "Resolution": "1366x768",
+      "Frequency": "59.99"
+    }
+  ],
+  "Autologin": true,
+  "LivePatch": false,
+  "Session": {
+    "DE": "ubuntu:GNOME",
+    "Name": "ubuntu",
+    "Type": "x11"
+  },
+  "Language": "en_US",
+  "Timezone": "Africa/Dar_es_Salaam",
+  "Install": {
+    "Media": "Ubuntu 18.04.1 LTS \"Bionic Beaver\" - Release amd64 (20180725)",
+    "Type": "GTK",
+    "OEM": false,
+    "PartitionMethod": "manual",
+    "DownloadUpdates": true,
+    "Language": "en",
+    "Minimal": false,
+    "RestrictedAddons": true,
+    "Stages": {
+      "0": "language",
+      "4": "language",
+      "60": "console_setup",
+      "97": "wireless",
+      "282": "prepare",
+      "323": "partman",
+      "336": "partman",
+      "337": "partman",
+      "338": "partman",
+      "370": "partman",
+      "381": "partman",
+      "423": "partman",
+      "441": "partman",
+      "442": "partman",
+      "443": "partman",
+      "478": "partman",
+      "502": "partman",
+      "694": "partman",
+      "1880": "partman",
+      "1886": "partman",
+      "2408": "partman",
+      "2414": "partman",
+      "2527": "partman",
+      "2533": "partman",
+      "2569": "partman",
+      "2588": "start_install",
+      "2602": "timezone",
+      "2705": "usersetup",
+      "2781": "user_done",
+      "4871": "done"
+    }
+  }
+}
