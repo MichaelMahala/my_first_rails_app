@@ -5,7 +5,14 @@
     "windowsState": {
         "openedWindows": [],
         "lastActiveWindow": {
-            "backupPath": "/home/user-pc/.config/Code/Backups/1549022837313",
+            "folderUri": {
+                "$mid": 1,
+                "fsPath": "/home/user-pc",
+                "external": "file:///home/user-pc",
+                "path": "/home/user-pc",
+                "scheme": "file"
+            },
+            "backupPath": "/home/user-pc/.config/Code/Backups/e0881b258209cedd78bd054589a44b1f",
             "uiState": {
                 "mode": 1,
                 "x": 171,
@@ -14,5 +21,12 @@
                 "height": 741
             }
         }
+    },
+    "openedPathsList": {
+        "workspaces2": [
+            "file:///home/user-pc/my_first_rails_app",
+            "file:///home/user-pc"
+        ],
+        "files2": []
     }
 }

@@ -62,3 +62,82 @@ git init
 git add
 git commit -m "initial commit"!
 exit
+git add
+git add .
+git commit -m "initial commit"!
+git remote add origin <https://github.com/MichaelMahala/my_first_rails_app.git>
+git remote add origin https://github.com/MichaelMahala/my_first_rails_app.git
+git push -u origin master
+curl https://cli-assets.heroku.com/install.sh | sh
+heroku keys:add
+heroku create
+git remote show
+ls
+directory
+rails new my_first_rails_app
+cd my_first_rails_app
+rails new my_second_rails_app
+mkdir odin_on_rails
+cd odin_on_rails
+ls
+exit
+ls
+cd odin_on_rails
+ls
+exit
+odin_on_rails
+mkdir Gemfile
+cd Gemfile
+exit
+ls
+rails new my_first_rails_app
+code .
+ls
+rails new my_secondr_rails_app
+sudo gem install bundler 
+ls
+rails new my_five_rails_app
+bundle install --without production
+pwd
+cd odin_on_rails
+ls
+exit
+bundle exec jekyll build
+cd my_first_rails_app
+exit
+cd my-jekyll-project
+cd $HOME
+sudo apt-get update 
+git clone https://github.com/rbenv/rbenv.git ~/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
+echo 'eval "$(rbenv init -)"' >> ~/.bashrc
+exec $SHELL
+git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build
+echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashr
+exec $SHELL
+rbenv install 2.3.1
+sudo apt-get install git-core curl zlib1g-dev build-essential libssl-dev libreadline-dev libyaml-dev libsqlite3-dev sqlite3 libxml2-dev libxslt1-dev libcurl4-openssl-dev python-software-properties libffi-dev
+rbenv install 2.3.1
+apt-get install -y libssl-dev zlib1g-dev` to fetch missing dependencies
+code .
+bundle install --without production
+cd my_first_rails
+cd odin_on_rails
+bundle install --without production
+exit
+mkdir Gemfile
+cd Gemfile
+bundle install --without production
+exit
+RAILS_ENV=production bundle exec rake assets:precompile
+rails new my_first_rails_app
+rails new testapp
+cd my_first_app
+cd my_first_rails_app
+bundle install
+bundle install --without production
+gem install bundler
+sudo install bundler
+install --help
+code .
+exit

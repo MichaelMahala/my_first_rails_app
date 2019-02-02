@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><title>Could not locate Gemfile or .bundle/ directory | Forestry.io</title><meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Accept-CH" content="DPR,Width,Viewport-Width" />
+<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<meta name="apple-mobile-web-app-title" content="Forestry.io" />
+<meta name="application-name" content="Forestry.io" />
+<meta name="msapplication-config" content="/favicons/browserconfig.xml" />
+<meta name="theme-color" content="#ffffff" />
+<meta name="description" content="Describes a common error for Jekyll users of Forestry.io and includes step-by-step instructions for solving the underlying error and testing that the issue is resolved locally. /"><meta name="robots" content="index, follow" />
+<meta property="og:title" content="Could not locate Gemfile or .bundle/ directory" />
+<meta property="og:description" content="Describes a common error for Jekyll users of Forestry.io and includes step-by-step instructions for solving the underlying error and testing that the issue is resolved locally." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/" /><meta property="og:image" content="https://forestry.io/uploads/2018/01/OGimage-01-docs-3x.jpg" /><meta property="og:image:alt" content="Describes a common error for Jekyll users of Forestry.io and includes step-by-step instructions for solving the underlying error and testing that the issue is resolved locally." /><meta property="article:published_time" content="2017-12-07T04:00:00&#43;00:00"/>
+  <meta property="article:modified_time" content="2018-02-22T11:56:06&#43;00:00"/><meta property="og:locale" content="en" />
+<meta property="article:section" content="docs" />
+  <meta itemprop="name" content="Could not locate Gemfile or .bundle/ directory">
+<meta itemprop="description" content="Describes a common error for Jekyll users of Forestry.io and includes step-by-step instructions for solving the underlying error and testing that the issue is resolved locally."><meta itemprop="datePublished" content="2017-12-07T04:00:00&#43;00:00" /><meta itemprop="dateModified" content="2018-02-22T11:56:06&#43;00:00" /><meta itemprop="wordCount" content="627"><meta itemprop="image" content="https://forestry.io/uploads/2018/01/OGimage-01-docs-3x.jpg">
+  <meta itemprop="keywords" content="chris-macrae,colin-garvey,dj-walker,forestry-team,forestryio,jordan-patterson,josh-dzielak,michael-soolee,rÃ©gis-philibert,scott-gallant,sebastian-engels,team-forestry,beyond-static,cicd,cms,company,development-tools,frontend-friday,hugo,jekyll,static-sites,vuepress,,blocks,ci/cd,frontend-friday,hugo,jekyll,webpack,wordpress," /><meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:image:src" content="https://forestry.io/uploads/2018/01/OGimage-01-docs-3x.jpg"/><meta name="twitter:title" content="Could not locate Gemfile or .bundle/ directory"/>
+<meta name="twitter:description" content="Describes a common error for Jekyll users of Forestry.io and includes step-by-step instructions for solving the underlying error and testing that the issue is resolved locally."/><meta name="twitter:site" content="@forestryio"/><meta name="generator" content="Hugo 0.51" />
+<link rel="stylesheet" href="/css/styles.min.css?9e15043ba27a558be34fff73368f91e8" type="text/css" /><link rel="manifest" href="/favicons/manifest.json" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32" />
+<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16" />
+<link rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#00c7b7" />
+<style>.async-hide { opacity: 0 !important} </style>
+<script>
+(function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+(a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+})(window,document.documentElement,'async-hide','dataLayer',4000,{'GTM-KL5HP9Q':true});
+</script> 
+
+
+<script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KL5HP9Q');</script>
+
+<script type="text/javascript">
+  (function() {
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', 669564344]);
+  var ldinsp = function(){
+  if(typeof window.__inspld != "undefined") return; window.__inspld = 1; var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js?wid=669564344&r=' + Math.floor(new Date().getTime()/3600000); var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); };
+  setTimeout(ldinsp, 0);
+  })();
+</script>
+<script>
+var featureFlagContent = {};
+</script>
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Organization",
+    "url": "https://forestry.io",
+    "logo": "/img/forestry-full.svg",
+    "sameAs": ["https://www.twitter.com/forestryio"]
+  }
+  </script>
+</head>
+  <body class="section-docs kind-page type-docs ">
+    
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KL5HP9Q" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <header class="header container docs">
+  <div class="left-block">
+    <a href="/" title="Go to homepage" class="logo"></a>
+  </div>
+  <div class="right-block"><div class="search">
+      <input type="search" name="search" placeholder="Search the docs..." class="search--input">
+    </div><nav class="nav">
+      <div class="nav-content">
+        <a href="/" class="mini-nav--logo"></a>
+        <ul class="main-nav-items"><li>
+              <a href="/pricing/" class="nav-item">Pricing</a>
+            </li><li>
+              <a href="/docs/welcome/" class="nav-item">Docs</a>
+            </li><li>
+              <a href="/blog/" class="nav-item">Blog</a>
+            </li><li data-signed-in="false" data-user>
+              <a href="https://app.forestry.io/settings" class="nav-item">My Account</a>
+            </li><li data-signed-out="true">
+              <a href="https://app.forestry.io/login" class="nav-item">Login</a>
+            </li><li class="nav-item" data-signed-in="false">
+                <a class="signup-button button small primary" href="https://app.forestry.io/dashboard">Dashboard</a>
+              </li><li data-signed-out="true">
+              <a class="signup-button button small primary" href="https://app.forestry.io/signup">Sign up</a>
+            </li></ul><div class="docs-nav-items"><h3>Troubleshooting</h3>
+  <ul><li><a href="/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/">Migrate Select Fields to New Data File Sections</a></li><li><a href="/docs/troubleshooting/unexpected-status-code-connection-expected-but-not-available/">Unexpected Status Code / Connection Expected but not Available</a></li><li><a href="/docs/troubleshooting/build-issues-for-sites-in-subdirectories/">Build Issues For Sites in Subdirectories</a></li><li><a href="/docs/troubleshooting/using-a-git-submodule-for-your-theme/">Using a Git submodule for your theme</a></li><li><a href="/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/" class="active">Could not locate Gemfile or .bundle/ directory</a></li><ul class="table-of-contents"><li class="level-2">
+              <a href="https://forestry.io/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/#what-this-error-means">What this error means</a>
+            </li><li class="level-2">
+              <a href="https://forestry.io/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/#fixing-the-issue">Fixing the issue</a>
+            </li></ul><li><a href="/docs/troubleshooting/cname/">How do I add a CNAME to my site?</a></li><li><a href="/docs/troubleshooting/cant-publish-preview-or-save/">Can&#39;t publish, preview, or save</a></li><li><a href="/docs/troubleshooting/css-js-and-media-not-working/">CSS, JS, &amp; Media not working</a></li></ul></div></div>
+    </nav>
+    <div class="mini-nav--toggle"><img class="toggle-open" src="/img/navtoggle-open.svg" alt="Open nav"><img class="toggle-close" src="/img/navtoggle-close.svg" alt="Close nav">
+    </div>
+  </div>
+</header><main class="docs-container">
+    <div class="sidebar">
+      <aside class="sidebar-inner">
+        <h2>
+          <a href="/docs">
+            Docs
+          </a>
+        </h2><div class="docs-nav-items"><h3>Troubleshooting</h3>
+  <ul><li><a href="/docs/troubleshooting/migrate-select-fields-to-new-data-file-sections/">Migrate Select Fields to New Data File Sections</a></li><li><a href="/docs/troubleshooting/unexpected-status-code-connection-expected-but-not-available/">Unexpected Status Code / Connection Expected but not Available</a></li><li><a href="/docs/troubleshooting/build-issues-for-sites-in-subdirectories/">Build Issues For Sites in Subdirectories</a></li><li><a href="/docs/troubleshooting/using-a-git-submodule-for-your-theme/">Using a Git submodule for your theme</a></li><li><a href="/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/" class="active">Could not locate Gemfile or .bundle/ directory</a></li><ul class="table-of-contents"><li class="level-2">
+              <a href="https://forestry.io/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/#what-this-error-means">What this error means</a>
+            </li><li class="level-2">
+              <a href="https://forestry.io/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/#fixing-the-issue">Fixing the issue</a>
+            </li></ul><li><a href="/docs/troubleshooting/cname/">How do I add a CNAME to my site?</a></li><li><a href="/docs/troubleshooting/cant-publish-preview-or-save/">Can&#39;t publish, preview, or save</a></li><li><a href="/docs/troubleshooting/css-js-and-media-not-working/">CSS, JS, &amp; Media not working</a></li></ul></div></aside>
+    </div>
+    <section class="docs-content">
+      <div class="container md-content">
+        <h1>Could not locate Gemfile or .bundle/ directory</h1>
+        
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+    
+  
+  
+
+<h4 id="when-i-view-an-error-log-from-forestry-i-see-could-not-locate-gemfile-or-bundle-directory">When I view an error log from Forestry I see: <code>Could not locate Gemfile or .bundle/ directory</code></h4>
+
+<h2 id="what-this-error-means">What this error means</h2>
+
+<p>Gemfiles include a list of project dependencies and where to find them.  Bundler is a dependency manager for the Ruby programming language that can read Gemfiles, resolve the dependency graph and install those gems.  Jekyll is a ruby application and can use Bundler to manage your project dependencies.  Forestry requires that your Jekyll projects contain a Gemfile at the root of the repository.</p>
+
+<p>This error message typically means that your Jekyll project doesn&rsquo;t have an Gemfile.  This document will help you to create a Gemfile for your project so that you can use Forestry to build your project and unlock our powerful Preview and Publish functionality.</p>
+
+<p>Jekyll also allows several methods to specify plugins, including using your project Gemfile.  Forestry will continue to support all of these options specifically for jekyll plugin dependencies.</p>
+
+<div class="shortcode-tip"><p>Read more about:</p>
+
+<h5 id="jekyll-and-gemfiles-https-jekyllrb-com-docs-quickstart-about-bundler"><a href="https://jekyllrb.com/docs/quickstart/#about-bundler">Jekyll and Gemfiles</a></h5>
+
+<h5 id="bundler-http-bundler-io"><a href="http://bundler.io/">Bundler</a></h5>
+
+<h5 id="gemfiles-http-bundler-io-v1-16-man-gemfile-5-html"><a href="http://bundler.io/v1.16/man/gemfile.5.html">Gemfiles</a></h5>
+
+<h5 id="jekyll-plugins-https-jekyllrb-com-docs-plugins"><a href="https://jekyllrb.com/docs/plugins/">Jekyll-plugins</a></h5>
+
+</div>
+
+<h3 id="but-my-project-works-fine-when-i-build-it-on-my-machine">But my project works fine when I build it on my machine</h3>
+
+<p>This can happen when you can have gems installed globally on your machine.  Since Forestry&rsquo;s architecture builds your sites in the cloud we need a way to specify to the cloud computer what code it needs to successfully build your site.  The Gemfile serves this purpose.</p>
+
+<h2 id="fixing-the-issue">Fixing the issue</h2>
+
+<h3 id="testing-that-the-gemfile-works-locally">Testing that the Gemfile works locally</h3>
+
+<p>To test this you can open a command line, navigate to your  project repo and execute the command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">bundle exec jekyll build</pre></div>
+<p>If  your site builds and you don&rsquo;t see any errors, your project should also build in Forestry.  If it still doesn&rsquo;t please contact support and we can help.</p>
+
+<h3 id="adding-a-gemfile-to-an-existing-project">Adding a Gemfile to an existing project</h3>
+
+<p>In our opinion the easiest way to add a gemfile to a project is to have Jekyll generate a Gemfile for you, then commit that file to your project repo and push it to your source provider.  To achieve you&rsquo;ll need to:</p>
+
+<ul>
+<li>open a command line</li>
+<li>navigate to the project directory</li>
+<li>make sure you have a clean working tree</li>
+<li>execute the <code>jekyll new</code> command with the appropriate options</li>
+<li>install the dependencies with bundler</li>
+<li>test that the project works the way that you expect it to with bundler</li>
+<li>commit and push those changes with git</li>
+</ul>
+
+<p>In bash this would correspond to the following set of commands:</p>
+
+<div class="shortcode-tip"><p>Note that the &ldquo;#&rdquo; and everything after are comments to describe what the command should do.</p>
+
+</div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">cd my-jekyll-project  
+ 
+git status 
+
+# you can use &#34;git stash&#34; to set aside any work 
+# in progress you might have
+
+# this command will generate a template Gemfile,
+# calculate the dependency graph and install the 
+# dependencies with bundler  
+jekyll new . --force 
+
+# Now you can make  any changes you need to the 
+# Gemfile, the template is well commented  with 
+# regions to comment and uncomment based on common 
+# uses like  gem-based themes and setup for publishing 
+# to github pages.
+
+# this command will test that the gemfile works and 
+# serve your project to localhost:4000  
+bundle exec jekyll serve 
+
+# Open a web browser and go to the url localhost:4000 
+# to make sure your website looks as expected
+
+git add Gemfile Gemfile.lock
+git commit -m &#34;Dependency management handling via bundler&#34;
+git push
+
+# If you did stash any work above, reapply it 
+# now with &#34;git stash pop&#34;</pre></div>
+<p>Going forward, Forestry recommends that you prepend all your jekyll  commands with <code>bundle exec</code> like we have in the example above. That way Forestry previews and publishes should match the experience you have on your computer when you serve and build with Jekyll.</p>
+
+<p>If there are any questions or if you run into any issues please don&rsquo;t hesitate to contact our support team.</p>
+
+
+        <nav class="pagination"><a href="/docs/troubleshooting/using-a-git-submodule-for-your-theme/" rel="prev"><span class="prev-doc">Using a Git submodule for your theme</span></a><a href="/docs/troubleshooting/cname/" rel="next"><span class="next-doc">How do I add a CNAME to my site?</span></a></nav><hr />
+        <div class="doc--info">
+          <span class="doc--meta-label">Last updated on</span>
+          <span class="doc--date">February 22, 2018</span>
+        </div>
+        <div class="post--feedback">
+          <p><small>Caught a mistake or want to contribute to the docs? Edit this page on <a href="https://github.com/forestryio/forestry.io/edit/master/hugo/content/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory.md" target="_blank">Github</a>!</small></p>
+        </div></div>
+    </section>
+  </main><footer class="footer">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <a href="https://forestry.io" title="Go to homepage">
+          <img src="/img/forestry-symbol.svg" width="auto" height="24" alt="Forestry Logo">
+        </a>
+      </div><div class="column">
+        <span class="footer-title">Product</span><ul><li><a href="/pricing/">Pricing</a></li><li><a href="/docs/guides/">Guides</a></li><li><a href="/docs/welcome/">Docs</a></li><li><a href="/docs/changelog/">Changelog</a></li><li><a href="/docs/sunset/">Sunset Notices</a></li><li><a href="https://status.forestry.io">Status</a></li></ul></div><div class="column">
+        <span class="footer-title">Company</span><ul><li><a href="/support/">Support</a></li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Use</a></li><li><a href="/careers/">Careers</a></li></ul></div><div class="column">
+        <p>Join our slack community and get daily
+        updates on product updates.</p>
+        <a href="https://t.co/OANAJYol8Y" target="_blank">
+          <img class="slack-logo" src="/img/logos/slack.svg" width="auto" height="24" alt="Slack">
+        </a>
+      </div></div>
+  </div>
+  <div class="lower-footer">
+    <div class="container">
+      <div>&copy; 2015-2019 Forestry.io. All rights reserved.</div>
+      <div class="contact">
+        <ul><li><a href="https://twitter.com/forestryio" target="_blank"><img src="/img/logos/twitter.svg" height="16" alt="Twitter"></a></li><li><a href="https://t.co/OANAJYol8Y" target="_blank"><img src="/img/logos/slack-symbol.svg" height="16" alt="Slack"></a></li><li><a href="mailto:support@forestry.io"><img src="/img/email.svg" height="12" alt="Email"></a></li></div>
+    </div>
+  </div>
+</footer>
+
+<script async src="/js/ads.min.js?bc7a8f16a4a86c2e5819eb4a1036885f" type="text/javascript"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js"></script>
+
+<script src="/js/scripts.min.js?d10542309d14ebc8d11e697ba095a725" type="text/javascript"></script><aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+      <div class="search-header--sticky">
+        <div class="search-results--stats">
+          <div id="stats"></div>
+          <a href="https://algolia.com" target="_blank"><img src="/img/logos/search-by-algolia.svg" alt="Powered by Algolia" width="100" class="search-results--poweredby" /></a>
+        </div>
+        <div class="search-results--filters"></div>
+      </div>
+    </section>
+    <section class="section section-search-results">
+    </section>
+  </div>
+</aside></body>
+</html>¬Ï€'¬      \U>ã\U?ÿ@        W    :https://forestry.io/docs/troubleshooting/could-not-locate-gemfile-or-bundle-directory/ necko:classified 1 strongly-framed 1 security-info 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 request-method GET response-head HTTP/2.0 200 OK
+content-type: text/html
+content-length: 19449
+date: Fri, 01 Feb 2019 14:08:49 GMT
+last-modified: Thu, 31 Jan 2019 17:18:15 GMT
+etag: "b3b865cf0a632dbe560a813cba1c1882"
+server: AmazonS3
+x-cache: RefreshHit from cloudfront
+via: 1.1 b89903d8d440c2d657cc902d956ab98f.cloudfront.net (CloudFront)
+x-amz-cf-id: w9HUvIxjGExmjzrt5TA7EESPT4p8EEiE-zT-ohi0LHDr1bKy2xfOSQ==
+X-Firefox-Spdy: h2
+ original-response-headers content-type: text/html
+content-length: 19449
+date: Fri, 01 Feb 2019 14:08:49 GMT
+last-modified: Thu, 31 Jan 2019 17:18:15 GMT
+etag: "b3b865cf0a632dbe560a813cba1c1882"
+server: AmazonS3
+x-cache: RefreshHit from cloudfront
+via: 1.1 b89903d8d440c2d657cc902d956ab98f.cloudfront.net (CloudFront)
+x-amz-cf-id: w9HUvIxjGExmjzrt5TA7EESPT4p8EEiE-zT-ohi0LHDr1bKy2xfOSQ==
+X-Firefox-Spdy: h2
+ uncompressed-len 0 net-response-time-onstart 2492 net-response-time-onstop 2500 predictor::resource-count 51 predictor::https://forestry.io/css/styles.min.css?9e15043ba27a558be34fff73368f91e8 1,1,1549090531,4096 predictor::https://forestry.io/img/navtoggle-open.svg 1,1,1549090531,4097 predictor::https://forestry.io/img/navtoggle-close.svg 1,1,1549090531,4097 predictor::https://forestry.io/img/forestry-symbol.svg 1,1,1549090531,4097 predictor::https://forestry.io/img/logos/slack.svg 1,1,1549090531,4097 predictor::https://forestry.io/img/logos/twitter.svg 1,1,1549090531,4097 predictor::https://forestry.io/img/logos/slack-symbol.svg 1,1,1549090531,4097 predictor::https://forestry.io/img/email.svg 1,1,1549090531,4097 predictor::https://forestry.io/js/ads.min.js?bc7a8f16a4a86c2e5819eb4a1036885f 1,1,1549090531,4096 predictor::https://cdn.jsdelivr.net/npm/instantsearch.js@2.3.3/dist/instantsearch.min.js 1,1,1549090531,4096 predictor::https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js 1,1,1549090531,4096 predictor::https://forestry.io/js/scripts.min.js?d10542309d14ebc8d11e697ba095a725 1,1,1549090531,4096 predictor::https://forestry.io/img/logos/search-by-algolia.svg 1,1,1549090531,4097 predictor::https://www.googletagmanager.com/gtm.js?id=GTM-KL5HP9Q 1,1,1549090531,4096 predictor::https://forestry.io/img/forestry-full.svg?vb469302982d6ac955516b9abb7daacc0 1,1,1549090531,4096 predictor::https://forestry.io/img/search.svg?v90e9d461dd9a394f8940850b8943c5c1 1,1,1549090531,4096 predictor::https://forestry.io/img/chevron-left.svg?v3e5cdf957178f20a0853f1bb4e69633f 1,1,1549090531,4096 predictor::https://forestry.io/img/chevron-right.svg?v85a13a1a43a11eb907beabd8272f7852 1,1,1549090531,4096 predictor::https://cdn.inspectlet.com/inspectlet.js?wid=669564344&r=430302 1,1,1549090531,4096 predictor::https://www.google-analytics.com/analytics.js 1,1,1549090531,4096 predictor::https://www.youtube.com/iframe_api 1,1,1549090531,4097 predictor::https://connect.facebook.net/en_US/fbevents.js 1,1,1549090531,4096 predictor::https://static.ads-twitter.com/uwt.js 1,1,1549090531,4096 predictor::https://cdn.oribi.io/Xy0xODM1NjM0ODYx/oribi.js 1,1,1549090531,4096 predictor::https://s.ytimg.com/yts/jsbin/www-widgetapi-vfl7-J3Jh/www-widgetapi.js 1,1,1549090531,4096 predictor::https://www.google-analytics.com/gtm/js?id=GTM-K2NP8CK&t=gtm1&cid=914347920.1549090537 1,1,1549090531,4096 predictor::https://stats.g.doubleclick.net/r/collect?t=dc&aip=1&_r=3&v=1&_v=j73&tid=UA-39666952-5&cid=914347920.1549090537&jid=468763252&gjid=1391187152&_gid=1371164564.1549090537&_u=aGDAgEADQ~&z=1469914247 1,1,1549090531,4096 predictor::https://connect.facebook.net/signals/config/670078186526188?v=2.8.39&r=stable 1,1,1549090531,4096 predictor::https://t.co/i/adsct?p_id=Twitter&p_user_id=0&txn_id=nxoin&events=%5B%5B%22pageview%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=0 1,1,1549090531,4096 predictor::https://www.facebook.com/tr/?id=670078186526188&ev=PageView&dl=https%3A%2F%2Fforestry.io%2Fdocs%2Ftroubleshooting%2Fcould-not-locate-gemfile-or-bundle-directory%2F&rl=https%3A%2F%2Fwww.google.com%2F&if=false&ts=1549090539581&sw=1366&sh=768&v=2.8.39&r=stable&ec=0&o=30&fbp=fb.1.1549090539579.414977822&it=1549090538234&coo=false&rqm=GET 1,1,1549090531,4096 predictor::https://www.facebook.com/tr/?id=670078186526188&ev=ViewContent&dl=https%3A%2F%2Fforestry.io%2Fdocs%2Ftroubleshooting%2Fcould-not-locate-gemfile-or-bundle-directory%2F&rl=https%3A%2F%2Fwww.google.com%2F&if=false&ts=1549090539585&sw=1366&sh=768&v=2.8.39&r=stable&ec=1&o=30&fbp=fb.1.1549090539579.414977822&it=1549090538234&coo=false&rqm=GET 1,1,1549090531,4096 predictor::https://widget.intercom.io/widget/i9oymrzt 1,1,1549090531,4096 predictor::https://analytics.twitter.com/i/adsct?p_id=Twitter&p_user_id=0&txn_id=nxoin&events=%5B%5B%22pageview%22%2Cnull%5D%5D&tw_sale_amount=0&tw_order_quantity=0&tw_iframe_status=0&tpx_cb=twttr.conversion.loadPixels&tw_document_href=https%3A%2F%2Fforestry.io%2Fdocs%2Ftroubleshooting%2Fcould-not-locate-gemfile-or-bundle-directory%2F 1,1,1549090531,4096 predictor::https://s.adroll.com/j/roundtrip.js 1,1,1549090531,4096 predictor::https://d.adroll.com/consent/check/AJVCYFUQTRBQHN6BAOPZLU?_s=2f3fdea984dd72a41712c85d472553c4 1,1,1549090531,4096 predictor::https://js.intercomcdn.com/frame.0fc4d7c5.js 1,1,1549090531,4096 predictor::https://js.intercomcdn.com/vendor.94484538.js 1,1,1549090531,4096 predictor::https://d.adroll.com/pixel/AJVCYFUQTRBQHN6BAOPZLU/EZOMG7GQGJE6LAKWXMT52T?adroll_fpc=fba762881ce1244600e885574101115f&pv=21939796871.703156&cookie=&adroll_s_ref=https%3A//www.google.com/&keyw=&arrfrr=https%3A%2F%2Fforestry.io%2Fdocs%2Ftroubleshooting%2Fcould-not-locate-gemfile-or-bundle-directory%2F 1,1,1549090531,4096 predictor::https://s.adroll.com/j/sendrolling.js 1,1,1549090531,4096 predictor::https://connect.facebook.net/signals/config/237095183446821?v=2.8.39&r=stable 1,1,1549090531,4096 predictor::https://d.adroll.com/cm/r/out?advertisable=AJVCYFUQTRBQHN6BAOPZLU 1,1,1549090531,4096 predictor::https://d.adroll.com/cm/b/out?advertisable=AJVCYFUQTRBQHN6BAOPZLU 1,1,1549090531,4096 predictor::https://d.adroll.com/cm/x/out?advertisable=AJVCYFUQTRBQHN6BAOPZLU 1,1,1549090531,4096 predictor::https://d.adroll.com/cm/l/out?advertisable=AJVCYFUQTRBQHN6BAOPZLU 1,1,1549090531,4096 predictor::https://d.adroll.com/cm/o/out?advertisable=AJVCYFUQTRBQHN6BAOPZLU 1,1,1549090531,4096 predictor::https://d.adroll.com/cm/g/out?advertisable=AJVCYFUQTRBQHN6BAOPZLU&google_nid=adroll5 1,1,1549090531,4096 predictor::https://static.intercomassets.com/avatars/1527467/square_128/SelfAvatar307-1515590912.png?1515590912 1,1,1549090531,4096 predictor::https://static.intercomassets.com/avatars/695183/square_128/headshot-1486568110.jpg?1486568110 1,1,1549090531,4096 predictor::https://static.intercomassets.com/avatars/1853758/square_128/Avatar-1519660114.jpg?1519660114 1,1,1549090531,4096 predictor::https://js.intercomcdn.com/fonts/proximanova-regular.a7942249.woff 1,1,1549090531,4096 predictor::https://www.facebook.com/tr/?id=237095183446821&ev=PageView&dl=https%3A%2F%2Fforestry.io%2Fdocs%2Ftroubleshooting%2Fcould-not-locate-gemfile-or-bundle-directory%2F&rl=https%3A%2F%2Fwww.google.com%2F&if=false&ts=1549090544680&cd[segment_eid]=ON5IF446ANGVFBOYWRJ5GP&sw=1366&sh=768&v=2.8.39&r=stable&ec=0&o=29&fbp=fb.1.1549090539579.414977822&it=1549090538234&coo=false&rqm=GET 1,1,1549090531,4096   Kù
